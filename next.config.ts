@@ -1,13 +1,17 @@
-import type {NextConfig} from 'next';
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // ✅ Biar build tetap jalan walau ada error TypeScript
   typescript: {
     ignoreBuildErrors: true,
   },
+
+  // ✅ Biar build tetap jalan walau ada error ESLint
   eslint: {
     ignoreDuringBuilds: true,
   },
+
+  // ✅ Konfigurasi domain gambar eksternal
   images: {
     remotePatterns: [
       {
@@ -16,6 +20,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-};
+}
 
-export default nextConfig;
+export default nextConfig
