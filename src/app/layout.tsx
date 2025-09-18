@@ -6,6 +6,9 @@ import { ThemeProvider } from '@/components/theme-provider';
 export const metadata: Metadata = {
   title: 'Flora Vision',
   description: 'Detect plants, trees, fruits, and vegetables with AI.',
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 export default function RootLayout({

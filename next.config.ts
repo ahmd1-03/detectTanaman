@@ -1,4 +1,4 @@
-import type { NextConfig } from 'next'
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // ✅ Biar build tetap jalan walau ada error TypeScript
@@ -15,11 +15,13 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
+        protocol: "https",
+        hostname: "images.unsplash.com",
       },
     ],
+    // ✅ Opsional: matiin optimizer di dev agar 404 hilang
+    unoptimized: true,
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;
